@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/ -->
+<html lang="en-US" class="no-js cookie-bar-bottom-bar cookie-bar-bar" style="margin-top: 0px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+
+<meta name="viewport" content="width=device-width">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://laravel-bap.com/xmlrpc.php">
+<title>Login with Google</title>
+
+<!-- Social Warfare v4.2.1 https://warfareplugins.com - BEGINNING OF OUTPUT -->
+<style>
+	@font-face {
+		font-family: "sw-icon-font";
+		src:url("https://laravel-bap.com/laravel-bap-cont/plugins/social-warfare/assets/fonts/sw-icon-font.eot?ver=4.2.1");
+		src:url("https://laravel-bap.com/laravel-bap-cont/plugins/social-warfare/assets/fonts/sw-icon-font.eot?ver=4.2.1#iefix") format("embedded-opentype"),
+		url("https://laravel-bap.com/laravel-bap-cont/plugins/social-warfare/assets/fonts/sw-icon-font.woff?ver=4.2.1") format("woff"),
+		url("https://laravel-bap.com/laravel-bap-cont/plugins/social-warfare/assets/fonts/sw-icon-font.ttf?ver=4.2.1") format("truetype"),
+		url("https://laravel-bap.com/laravel-bap-cont/plugins/social-warfare/assets/fonts/sw-icon-font.svg?ver=4.2.1#1445203416") format("svg");
+		font-weight: normal;
+		font-style: normal;
+		font-display:block;
+	}
+</style>
+<!-- Social Warfare v4.2.1 https://warfareplugins.com - END OF OUTPUT -->
+
+
+<!-- All In One SEO Pack 3.7.1[301,348] -->
+<link rel="next" href="https://laravel-bap.com/doc/laravel-bap-crm/page/2/">
+
+<div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script type="text/javascript" async="" src="./Login-with-Google_files/analytics.js"></script><script type="text/javascript" async="" src="./Login-with-Google_files/js"></script><script type="application/ld+json" class="aioseop-schema">{}</script>
+<link rel="canonical" href="https://laravel-bap.com/doc/laravel-bap-crm/">
+			<script type="text/javascript">
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-114508146-1', 'auto');
+				// Plugins
+				
+				ga('send', 'pageview');
+			</script>
+			<script async="" src="./Login-with-Google_files/analytics.js"></script>
+			<!-- All In One SEO Pack -->
+
+<!-- This site is optimized with the Yoast SEO plugin v12.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://laravel-bap.com/doc/laravel-bap-crm/">
+<link rel="next" href="https://laravel-bap.com/doc/laravel-bap-crm/page/2/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="object">
+<meta property="og:title" content="Laravel BAP - CRM Archives - Laravel BAP">
+<meta property="og:url" content="https://laravel-bap.com/doc/laravel-bap-crm/">
+<meta property="og:site_name" content="Laravel BAP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Laravel BAP - CRM Archives - Laravel BAP">
+<meta name="twitter:site" content="@laravel_bap">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://laravel-bap.com/#website","url":"https://laravel-bap.com/","name":"Laravel BAP","potentialAction":{"@type":"SearchAction","target":"https://laravel-bap.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://laravel-bap.com/doc/laravel-bap-crm/#webpage","url":"https://laravel-bap.com/doc/laravel-bap-crm/","inLanguage":"en-US","name":"Laravel BAP - CRM Archives - Laravel BAP","isPartOf":{"@id":"https://laravel-bap.com/#website"}}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://secure.gravatar.com/">
+<link rel="dns-prefetch" href="https://oss.maxcdn.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="alternate" type="application/rss+xml" title="Laravel BAP » Feed" href="https://laravel-bap.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Laravel BAP » Comments Feed" href="https://laravel-bap.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Laravel BAP » Laravel BAP - CRM Documentation Category Feed" href="https://laravel-bap.com/doc/laravel-bap-crm/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/laravel-bap.com\/laravel-bap-inc\/js\/wp-emoji-release.min.js?ver=5.2.20"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Login-with-Google_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="social-warfare-block-css-css" href="./Login-with-Google_files/blocks.style.build.css" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-css" href="./Login-with-Google_files/crayon.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-theme-classic-css" href="./Login-with-Google_files/classic.css" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-font-monaco-css" href="./Login-with-Google_files/monaco.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Login-with-Google_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="./Login-with-Google_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="email-subscribers-css" href="./Login-with-Google_files/email-subscribers-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="pp-bootstrap-css" href="./Login-with-Google_files/bs.css" type="text/css" media="all">
+<link rel="stylesheet" id="pp-flat-ui-css" href="./Login-with-Google_files/flat-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="ppcore-css" href="./Login-with-Google_files/ppcore.css" type="text/css" media="all">
+<link rel="stylesheet" id="printomatic-css-css" href="./Login-with-Google_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-lightbox-swipebox-css" href="./Login-with-Google_files/swipebox.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="./Login-with-Google_files/settings.css" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="cookie-consent-style-css" href="./Login-with-Google_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-polls-css" href="./Login-with-Google_files/polls-css.css" type="text/css" media="all">
+<style id="wp-polls-inline-css" type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background-image: url('https://laravel-bap.com/laravel-bap-cont/plugins/wp-polls/images/default/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+
+</style>
+<link rel="stylesheet" id="social_warfare-css" href="./Login-with-Google_files/style(1).min.css" type="text/css" media="all">
+<link rel="stylesheet" id="manual-style-css" href="./Login-with-Google_files/style(2).css" type="text/css" media="all">
+<link rel="stylesheet" id="manual-fonts-css" href="./Login-with-Google_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="manual-bootstrap-css" href="./Login-with-Google_files/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="manual-css-owl-css" href="./Login-with-Google_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="manual-css-owl-theme-css" href="./Login-with-Google_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="manual-effect-css" href="./Login-with-Google_files/hover.css" type="text/css" media="all">
+<link rel="stylesheet" id="manual-css-mCustomScrollbar-css" href="./Login-with-Google_files/mcustomscrollbar.css" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="./Login-with-Google_files/default.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="__EPYT__style-css" href="./Login-with-Google_files/ytprefs.min.css" type="text/css" media="all">
+<style id="__EPYT__style-inline-css" type="text/css">
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<link rel="preload" as="style" href="./Login-with-Google_files/css(1)"><link rel="stylesheet" href="./Login-with-Google_files/css(1)" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic&#038;display=swap&#038;ver=1527581528" /></noscript><link rel="stylesheet" id="jetpack_css-css" href="./Login-with-Google_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" src="./Login-with-Google_files/jquery.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/jquery-migrate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/laravel-bap.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/crayon.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var es_data = {"messages":{"es_empty_email_notice":"Please enter email address","es_rate_limit_notice":"You need to wait for sometime before subscribing again","es_single_optin_success_message":"Successfully Subscribed.","es_email_exists_notice":"Email Address already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid email address","es_try_later_notice":"Please try after some time"},"es_ajax_url":"https:\/\/laravel-bap.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/email-subscribers-public.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/jquery.swipebox.min.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/infinite-scroll.pkgd.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activeGalleries":"1","animation":"1","hideCloseButtonOnMobile":"0","removeBarsOnMobile":"0","hideBars":"1","hideBarsDelay":"5000","videoMaxWidth":"1080","useSVG":"1","loopAtEnd":"0","woocommerce_gallery":"0","ajaxurl":"https:\/\/laravel-bap.com\/wp-admin\/admin-ajax.php","nonce":"7ee1228541"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/front.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/jquery.themepunch.revolution.min.js"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js?ver=1.4.2'></script>
+<![endif]-->
+<script type="text/javascript" src="./Login-with-Google_files/functions.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/jquery.history.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/laravel-bap.com\/wp-admin\/admin-ajax.php","security":"1d11700097","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/laravel-bap.com\/laravel-bap-cont\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/laravel-bap.com\/laravel-bap-cont\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"13.4.1.2","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/ytprefs.min.js"></script>
+<link rel="https://api.w.org/" href="https://laravel-bap.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://laravel-bap.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://laravel-bap.com/laravel-bap-inc/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.2.20">
+<meta name="framework" content="Redux 4.1.24"><style id="ctcc-css" type="text/css" media="screen">
+				#catapult-cookie-bar {
+					box-sizing: border-box;
+					max-height: 0;
+					opacity: 0;
+					z-index: 99999;
+					overflow: hidden;
+					color: #ddd;
+					position: fixed;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					background-color: #464646;
+				}
+				#catapult-cookie-bar a {
+					color: #fff;
+				}
+				#catapult-cookie-bar .x_close span {
+					background-color: #000000;
+				}
+				button#catapultCookie {
+					background:;
+					color: #000000;
+					border: 0; padding: 6px 9px; border-radius: 3px;
+				}
+				#catapult-cookie-bar h3 {
+					color: #ddd;
+				}
+				.has-cookie-bar #catapult-cookie-bar {
+					opacity: 1;
+					max-height: 999px;
+					min-height: 30px;
+				}</style>
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="dns-prefetch" href="https://widgets.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://0.gravatar.com/">
+<link rel="dns-prefetch" href="https://1.gravatar.com/">
+<link rel="dns-prefetch" href="https://2.gravatar.com/">
+<link rel="dns-prefetch" href="https://i0.wp.com/">
+<link rel="dns-prefetch" href="https://i1.wp.com/">
+<link rel="dns-prefetch" href="https://i2.wp.com/">
+<style type="text/css">img#wpstats{display:none}</style>			<style type="text/css">
+				.custom-link, .custom-link-blog, .more-link, .load_more a {color: rgba(70,178,137,1) !important;}.custom-link:hover, .custom-link-blog:hover, .more-link:hover, .load_more a:hover { color: rgba(51,51,51,1) !important; }
+												.button-custom, p.home-message-darkblue-bar, p.portfolio-des-n-link, .portfolio-section .portfolio-button-top, .body-content .wpcf7 input[type="submit"], .container .blog-btn, .sidebar-widget.widget_search input[type="submit"], .navbar-inverse .navbar-toggle, .custom_login_form input[type="submit"], .custom-botton, button#bbp_user_edit_submit, button#bbp_topic_submit, button#bbp_reply_submit, button#bbp_merge_topic_submit, .bbp_widget_login button#user-submit, input[type=submit] {background-color: rgba(70,178,137,1) !important;}
+				.navbar-inverse .navbar-toggle, .container .blog-btn,input[type=submit] { border-color: rgba(70,178,137,1)!important;}
+				.button-custom:hover, p.home-message-darkblue-bar:hover, .body-content .wpcf7 input[type="submit"]:hover, .container .blog-btn:hover, .sidebar-widget.widget_search input[type="submit"]:hover, .navbar-inverse .navbar-toggle:hover, .custom_login_form input[type="submit"]:hover, .custom-botton:hover, button#bbp_user_edit_submit:hover, button#bbp_topic_submit:hover, button#bbp_reply_submit:hover, button#bbp_merge_topic_submit:hover, .bbp_widget_login button#user-submit:hover, input[type=submit]:hover{  background-color: rgba(71,196,148,1) !important; }
+				
+								.footer-go-uplink { color:rgba(176,176,176,1)!important; font-size: 24px!important; }
+								.browse-help-desk .browse-help-desk-div .i-fa:hover, ul.news-list li.cat-lists:hover:before, .body-content li.cat.inner:hover:before, .kb-box-single:hover:before {color:rgba(71,196,148,1); } .social-share-box:hover { background:rgba(71,196,148,1); border: 1px solid rgba(71,196,148,1); }
+								
+								.form-control.header-search.search_loading { background: #fff url("https://laravel-bap.com/laravel-bap/img/loader.svg") no-repeat right 255px center!important; } @media (max-width:767px) { .form-control.header-search.search_loading { background: #fff url("https://laravel-bap.com/laravel-bap/img/loader.svg") no-repeat right 115px center!important; } }
+								
+				
+				.navbar-inverse .navbar-nav>li>a { font-family:Open Sans!important; text-transform: uppercase; font-weight: 600; font-size: 14px; letter-spacing: 0.9px; color:#3a3a3a!important; } .navbar-inverse .navbar-nav>li>a:hover { color:#5e5e5e!important; }
+#navbar ul li > ul { background-color:#262626; border-color:#262626; box-shadow: 0 5px 11px 0 rgba(0,0,0,.27); padding: 10px 0px;} #navbar ul li > ul li a { font-family:Open Sans!important; font-weight:600; font-size:11px; color:#9d9d9d!important; } #navbar ul li > ul li a:hover { color:#FFFFFF!important; } @media (max-width: 991px) {
+.mobile-menu-holder li a {  font-family:Open Sans!important; } }.noise-break { background: #F7F7F7 url(https://laravel-bap.com/laravel-bap/img/noise.jpg) repeat; }img.inner-page-white-logo { display: none; } img.home-logo-show { display: block; }nav.navbar.after-scroll-wrap img.inner-page-white-logo{ display: none; } nav.navbar.after-scroll-wrap img.home-logo-show { display: block; }.page_opacity.header_custom_height_new{ padding: 120px 0px!important; }.navbar {  z-index: 99; border: none;border-bottom:1px solid rgba(160,160,160,0.47); } .header_control_text_align { text-align:center; } h1.custom_h1_head { color: #4d515c!important; font-size: 36px!important; font-weight: 400!important; text-transform:capitalize!important; letter-spacing: 0px!important; }p.inner-header-color { color:#989CA6; font-size: 18px!important; letter-spacing: 0px!important; font-weight:400!important; text-transform:none;  }#breadcrumbs {color:#919191; text-transform:capitalize; letter-spacing: 0px; font-size: 14px; font-weight: 400;  padding-top: 0px;} #breadcrumbs span{ color:#919191; } #breadcrumbs a{ color:#919191; } #breadcrumbs a:hover{ color:#636363; } .trending-search span.popular-keyword-title { color:#989CA6; } .trending-search a { color:#B5B5B5!important; } .trending-search a:hover { color:#888F9E!important; }@media (min-width:768px) and (max-width:991px) { .navbar { position:relative!important; background: #FFFFFF!important; } .jumbotron_new.jumbotron-inner-fix .inner-margin-top{ padding-top: 0px!important; } .navbar-inverse .navbar-nav > li > a { color: #181818!important; } .padding-jumbotron{  padding:0px 0px 0px; } body.home .navbar-inverse .navbar-nav>li>a { color: #000000!important; } body.home .navbar-inverse .navbar-nav > li > a:hover{ color: #7C7C7C!important; } img.inner-page-white-logo { display: none; } img.home-logo-show { display: block; } ul.nav.navbar-nav.hidemenu { display: block; }} 
+			     @media (max-width:767px) { .navbar { position:relative!important; background: #FFFFFF!important; } .padding-jumbotron{ padding:0px 10px;  } .navbar-inverse .navbar-nav > li > a { color: #181818!important; padding-top: 10px!important; } .jumbotron_new.jumbotron-inner-fix .inner-margin-top { padding-top: 0px!important;  } .navbar-inverse .navbar-nav > li > a { border-top: none!important; } body.home .navbar-inverse .navbar-nav>li>a { color: #000000!important; } body.home .navbar-inverse .navbar-nav > li > a:hover{ color: #7C7C7C!important; } img.inner-page-white-logo { display: none; } img.home-logo-show { display: block; } }.footer-bg { background: #252525; } .footer-widget h5 { color: #DDDDDD!important; } .footer-widget .textwidget { color: #919191!important; } .footer-widget a {
+color: #919191!important; } .footer-widget a:hover { color:#BEBCBC!important; } span.post-date { color: #919191; }.footer_social_copyright, .footer-bg.footer-type-one{ background-color: #1b1b1b; } .footer-btm-box p, .footer-bg.footer-type-one p { color: #828282; } .footer-btm-box a, .footer-bg.footer-type-one .footer-btm-box-one a{ color: #9E9D9D!important;  } .footer-btm-box a:hover, .footer-bg.footer-type-one .footer-btm-box-one a:hover { color: #C4C4C4!important; } .footer-btm-box .social-footer-icon, .footer-bg.footer-type-one .social-footer-icon { color: #7E7E7E; } .footer-btm-box .social-footer-icon:hover, .footer-bg.footer-type-one .social-footer-icon:hover { color:#FFFFFF; }h2.woocommerce-loop-product__title {
+    font-size: 17px!important;
+    color: #4d4d4d!important;
+}
+h2.woocommerce-loop-product__title:hover {
+color: #888F9E!important;
+}
+h1.product_title.entry-title {
+    color: #6c6c6c!important;
+}body { color: #424242; font-family:Open Sans!important; font-size: 14px; line-height: 1.4; letter-spacing: 0.3px; }h1 {  font-family: Open Sans; font-weight:800; font-size:36px; line-height: 40px; text-transform:none; letter-spacing: 0.2px; color: #363d40; }h2 {  font-family: Open Sans; font-weight:800; font-size:31px; line-height: 35px; text-transform:none; letter-spacing: 0.2px; color: #626363; }h3 {  font-family: Open Sans; font-weight:700; font-size:26px; line-height: 34px; text-transform:none; letter-spacing: 0.2px; color: #585858; }h4 {  font-family: Open Sans; font-weight:700; font-size:21px; line-height: 24px; text-transform:none; letter-spacing: 0.2px; color: #585858; }h5 {  font-family: Open Sans; font-weight:700; font-size:16px; line-height: 20px; text-transform:none; letter-spacing: 0.5px; color: #585858; }h6 {  font-family: Open Sans; font-weight:700; font-size:14px; line-height: 20px; text-transform:none; letter-spacing: 0.2px; color: #585858; }.body-content .knowledgebase-cat-body h4 a, .body-content .knowledgebase-body h5:before, .body-content .knowledgebase-body h5 a, #bbpress-forums .bbp-reply-author .bbp-author-name, #bbpress-forums .bbp-topic-freshness > a, #bbpress-forums li.bbp-body ul.topic li.bbp-topic-title a, #bbpress-forums .last-posted-topic-title a, #bbpress-forums .bbp-forum-link, #bbpress-forums .bbp-forum-header .bbp-forum-title, .body-content .blog .caption h2 a, a.href, .body-content .collapsible-panels p.post-edit-link a, .tagcloud.singlepg a, h4.title-faq-cat a, .portfolio-next-prv-bar .portfolio-prev a, .portfolio-next-prv-bar .portfolio-next a, .search h4 a, .portfolio-filter ul li span{ color:#6C6C6C!important; }  
+		.body-content .knowledgebase-cat-body h4 a:hover, .body-content .knowledgebase-body h5:hover:before, .body-content .knowledgebase-body h5 a:hover, #bbpress-forums .bbp-reply-author .bbp-author-name:hover, #bbpress-forums .bbp-topic-freshness > a:hover, #bbpress-forums li.bbp-body ul.topic li.bbp-topic-title a:hover, #bbpress-forums .last-posted-topic-title a:hover, #bbpress-forums .bbp-forum-link:hover, #bbpress-forums .bbp-forum-header .bbp-forum-title:hover, .body-content .blog .caption h2 a:hover, .body-content .blog .caption span:hover, .body-content .blog .caption p a:hover, .sidebar-nav ul li a:hover, .tagcloud a:hover , a.href:hover, .body-content .collapsible-panels p.post-edit-link a:hover, .tagcloud.singlepg a:hover, .body-content li.cat a:hover, h4.title-faq-cat a:hover, .portfolio-next-prv-bar .portfolio-prev a:hover, .portfolio-next-prv-bar .portfolio-next a:hover, .search h4 a:hover, .portfolio-filter ul li span:hover{ color:#46b289!important; }.body-content .knowledgebase-body h5 { font-size:17px!important; }.navbar {  border: none; box-shadow:none; background:none!important; } .page_opacity.header_custom_height_new { padding: 112px 0px!important; } .noise-break { background: #f1f1f1 url(https://i1.wp.com/laravel-bap.com/laravel-bap-cont/uploads/2018/02/image-4.jpg?fit=1920%2C1246&#038;ssl=1) repeat; background-size: cover; background-position:center center; } h1.custom_h1_head { color: #ffffff!important; } #breadcrumbs, #breadcrumbs span  { color: #f5f5f5!important; } #breadcrumbs a, .trending-search a { color: #f5f5f5!important; } .trending-search a:hover, #breadcrumbs a:hover { color: #ffffff!important; } .trending-search span.popular-keyword-title { color: #dedede; } p.inner-header-color { color: #e8e8e8; }.page_opacity.header_custom_height_new { padding: 80px 0px!important; }				
+								
+				
+            </style>
+          <link href="https://laravel-bap.com/laravel-bap-cont/uploads/2018/03/favicon-bap-1.png" rel="shortcut icon">		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://laravel-bap.com/laravel-bap-cont/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.4.6.4 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<script type="text/javascript">function setREVStartSize(e){
+				try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;					
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};</script>
+<style id="redux_demo-dynamic-css" title="dynamic-css" class="redux-options-output">.site-title{color:#FFFFFF;}.site-title{color:#f9f9f9;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./Login-with-Google_files/js(1)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114508146-1');
+</script>
+	<style type="text/css">
+		.navbar{
+			background: none!important;
+		}
+	</style>
+
+<link rel="stylesheet" id="gravatar-card-css" href="./Login-with-Google_files/hovercards.min.css"></head>
+
+<body class="archive tax-manualdocumentationcategory term-laravel-bap-crm term-62 wpb-js-composer js-comp-ver-5.4.5 vc_responsive search-active-sticky" style="padding-top: 0px; padding-bottom: 0px;" data-new-gr-c-s-check-loaded="14.1182.0" data-gr-ext-installed="">
+<!--Navigation Menu-->
+<nav class="navbar navbar-inverse after-scroll-wrap">
+  <div class="container nav-fix">
+    <div class="navbar-header">
+      <i class="fa fa-bars navbar-toggle"></i><a class="navbar-brand" href="https://laravel-bap.com/"><img src="./Login-with-Google_files/bap-logo.png" class="pull-left custom-nav-logo home-logo-show" alt=""><img src="./Login-with-Google_files/bap-logo.png" class="pull-left custom-nav-logo inner-page-white-logo" alt=""></a>    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+  	<ul id="menu-top-menu" class="nav navbar-nav "><li id="menu-item-1784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/#">Product</a>
+<ul style="">
+	<li id="menu-item-1523" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://laravel-bap.com/features/">Features</a></li>
+	<li id="menu-item-2719" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://preview.codecanyon.net/item/multicrm-multicompany-laravel-crm/full_screen_preview/22196657?_ga=2.197855023.1423402898.1537299204-1424330205.1537119499">MultiCRM Demo / BAP Saas Kit</a></li>
+	<li id="menu-item-1560" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://laravel-bap.com/licenses/">Licenses</a></li>
+</ul>
+</li>
+<li id="menu-item-1517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/#">Resources</a>
+<ul style="">
+	<li id="menu-item-1491" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://laravel-bap.com/about-us/">About Us</a></li>
+	<li id="menu-item-1571" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://laravel-bap.com/documentation/getting-started/">Documentation</a></li>
+	<li id="menu-item-1698" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://laravel-bap.com/faq/getting-started/">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-1805" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://laravel-bap.com/support-ticket/">Support ticket</a></li>
+<li id="menu-item-1496" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="https://laravel-bap.com/news/">News &amp; Articles</a></li>
+<li id="menu-item-1494" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://laravel-bap.com/contact/">Contact</a></li>
+<li id="menu-item-2720" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="https://preview.codecanyon.net/item/multicrm-multicompany-laravel-crm/full_screen_preview/22196657?_ga=2.197855023.1423402898.1537299204-1424330205.1537119499"><span class="btn btn-success btn-md">MultiCRM</span></a></li>
+</ul>    </div>
+  </div>
+</nav>
+
+<!-- 
+========================
+ MOBILE MENU
+======================== 
+-->
+<div class="mobile-menu-holder"><div class="container">
+<ul id="menu-top-menu-1" class="nav navbar-nav "><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/#">Product</a>
+<ul>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://laravel-bap.com/features/">Features</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://preview.codecanyon.net/item/multicrm-multicompany-laravel-crm/full_screen_preview/22196657?_ga=2.197855023.1423402898.1537299204-1424330205.1537119499">MultiCRM Demo / BAP Saas Kit</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://laravel-bap.com/licenses/">Licenses</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub"><a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/#">Resources</a>
+<ul>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://laravel-bap.com/about-us/">About Us</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://laravel-bap.com/documentation/getting-started/">Documentation</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://laravel-bap.com/faq/getting-started/">FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://laravel-bap.com/support-ticket/">Support ticket</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a href="https://laravel-bap.com/news/">News &amp; Articles</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://laravel-bap.com/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="https://preview.codecanyon.net/item/multicrm-multicompany-laravel-crm/full_screen_preview/22196657?_ga=2.197855023.1423402898.1537299204-1424330205.1537119499"><span class="btn btn-success btn-md">MultiCRM</span></a></li>
+</ul></div></div>
+
+<div class="jumbotron_new inner-jumbotron jumbotron-inner-fix noise-break header_custom_height " style=" ">
+			<div class="page_opacity header_custom_height_new">
+			  <div class="container inner-margin-top">
+				<div class="row">
+				  <div class="col-md-12 col-sm-12 header_control_text_align"> 
+				  	<h1 class="inner-header custom_h1_head">Laravel BAP - CRM</h1><div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1 search-margin-top"><div class="global-search"><input type="hidden" id="oldplacvalue" value="Have a question? Ask or enter a search term">
+<form role="search" method="get" id="searchform" class="searchform" action="https://laravel-bap.com/">
+  <i class="fa fa-search livesearch"></i>
+  <div class="form-group">
+    <input type="text" placeholder="Have a question? Ask or enter a search term" value="" name="s" id="s" class="form-control header-search" autocomplete="off">
+    <!--Advance Search-->
+    <select class="search-expand-types" name="post_type" id="search_post_type"> <option value="">All</option> <option value="manual_documentation">Documentation</option> <option value="forum">Forums</option> <option value="page">Page</option> <option value="post">Post</option> <option value="manual_faq">FAQs</option> </select>    <!--Eof Advance Search-->
+    <input type="submit" class=" button button-custom" value="Search">
+  </div>
+</form>
+<div class="trending-search"><span class="popular-keyword-title">Popular Search:</span><a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/" class="trending-search-popular-keyword">Getting Started</a></div></div></div></div>
+			</div>
+		  </div>
+		  </div>
+		</div>
+<div class="container content-wrapper body-content">
+<div class="row margin-top-btm-50">
+
+<aside class="col-md-4 col-sm-4" id="sidebar-box">
+  <div class="custom-well blankbg sidebar-nav" style="padding-left:0px; padding-top:0px;">
+  
+    <div class="margin-btm-20">
+        <span><a class="more-link doc-expandall" style="cursor:pointer;">Expand All</a></span>
+        <span><a class="more-link doc-collapseall" style="cursor:pointer;display:none;">Collapse All</a></span>
+    </div>         
+    
+    <!--Sidebar list-->
+    <ul id="list-manual" class="toc-expandable page-doc mCustomScrollbar _mCS_1" data-toc-depth-max="1" style="height: 401px;"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                      
+      <li class="nav-header nav-header-sub" manual-topic-id="1344" manual-parent-id="1344" style="padding:3px 0px;"> 
+      
+      <a href="https://laravel-bap.com/documentation/getting-started/" rel="1344" class="post-link has-child  open-ul-first dataicon" style=" ">
+              
+        Getting Started        </a>
+        <ul class="parent-display-1344" style="display: block;">	
+	<li manual-topic-id="1342"> <a href="https://laravel-bap.com/documentation/getting-started/release-notes/" rel="1342" class="post-link">Release Notes</a>
+	  	</li>
+		
+	<li manual-topic-id="1352"> <a href="https://laravel-bap.com/documentation/getting-started/installation/" rel="1352" class="post-link">Multicrm Installation</a>
+	  	</li>
+		
+	<li manual-topic-id="2812"> <a href="https://laravel-bap.com/documentation/getting-started/saas-front-end-installation/" rel="2812" class="post-link">Landing Page Installation</a>
+	  	</li>
+		
+	<li manual-topic-id="1354"> <a href="https://laravel-bap.com/documentation/getting-started/configuration/" rel="1354" class="post-link has-inner-child dataicon child-a-icon-1354">Configuration</a>
+	  <ul class="parent-display-1354 child-open-1354" style="display: block;">	
+	<li manual-topic-id="2925"> <a href="https://laravel-bap.com/documentation/getting-started/configuration/paypal-configuration/" rel="2925" class="post-link">PayPal Configuration</a>
+	  	</li>
+		
+	<li manual-topic-id="2931"> <a href="https://laravel-bap.com/documentation/getting-started/configuration/stripe-configuration/" rel="2931" class="post-link">Stripe Configuration</a>
+	  	</li>
+		
+	<li manual-topic-id="2935"> <a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-twitter/" rel="2935" class="post-link">Login with Twitter</a>
+	  	</li>
+		
+	<li manual-topic-id="2943"> <a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-facebook/" rel="2943" class="post-link">Login with Facebook</a>
+	  	</li>
+		
+	<li manual-topic-id="2955"> <a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-github/" rel="2955" class="post-link">Login with Github</a>
+	  	</li>
+		
+	<li manual-topic-id="2959"> <a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/" rel="2959" class="post-link doc-active">Login with Google</a>
+	  	</li>
+		
+	<li manual-topic-id="2963"> <a href="https://laravel-bap.com/documentation/getting-started/configuration/recaptcha/" rel="2963" class="post-link">ReCaptcha</a>
+	  	</li>
+	</ul>	</li>
+		
+	<li manual-topic-id="1356"> <a href="https://laravel-bap.com/documentation/getting-started/directory-structure/" rel="1356" class="post-link">Directory Structure</a>
+	  	</li>
+	</ul>      </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                      
+      <li class="nav-header nav-header-sub" manual-topic-id="1439" manual-parent-id="1439" style="padding:3px 0px;"> 
+      
+      <a href="https://laravel-bap.com/documentation/core-modules/" rel="1439" class="post-link  has-child" style=" ">
+              
+        Development documentation        </a>
+        <ul class="parent-display-1439">	
+	<li manual-topic-id="2563"> <a href="https://laravel-bap.com/documentation/core-modules/notifications/" rel="2563" class="post-link">Notifications</a>
+	  	</li>
+		
+	<li manual-topic-id="2885"> <a href="https://laravel-bap.com/documentation/core-modules/adding-custom-crud-events/" rel="2885" class="post-link">Adding Custom Crud Events</a>
+	  	</li>
+		
+	<li manual-topic-id="1441"> <a href="https://laravel-bap.com/documentation/core-modules/generating-new-module/" rel="1441" class="post-link">Generating new module</a>
+	  	</li>
+		
+	<li manual-topic-id="2551"> <a href="https://laravel-bap.com/documentation/core-modules/rest-api/" rel="2551" class="post-link">Generic Rest API</a>
+	  	</li>
+		
+	<li manual-topic-id="2985"> <a href="https://laravel-bap.com/documentation/core-modules/webform-api-creating-leads-contacts-via-api/" rel="2985" class="post-link">WebForm API - Creating leads, contacts via API</a>
+	  	</li>
+		
+	<li manual-topic-id="1443"> <a href="https://laravel-bap.com/documentation/core-modules/translations/" rel="1443" class="post-link">Translations</a>
+	  	</li>
+		
+	<li manual-topic-id="2347"> <a href="https://laravel-bap.com/documentation/core-modules/crud-controller/" rel="2347" class="post-link">Crud Controller</a>
+	  	</li>
+		
+	<li manual-topic-id="2417"> <a href="https://laravel-bap.com/documentation/core-modules/creating-custom-module/" rel="2417" class="post-link">Creating Custom Module</a>
+	  	</li>
+		
+	<li manual-topic-id="2525"> <a href="https://laravel-bap.com/documentation/core-modules/how-to-add-new-field-to-module/" rel="2525" class="post-link">How to add new field to module</a>
+	  	</li>
+		
+	<li manual-topic-id="2880"> <a href="https://laravel-bap.com/documentation/core-modules/how-to-add-new-mass-action/" rel="2880" class="post-link">How to Add new Mass Action</a>
+	  	</li>
+		
+	<li manual-topic-id="2882"> <a href="https://laravel-bap.com/documentation/core-modules/how-to-add-module-relations/" rel="2882" class="post-link">How to add module relations</a>
+	  	</li>
+	</ul>      </li>
+                      
+      <li class="nav-header nav-header-sub" manual-topic-id="1358" manual-parent-id="1358" style="padding:3px 0px;"> 
+      
+      <a href="https://laravel-bap.com/documentation/user-documentation/" rel="1358" class="post-link  has-child" style=" ">
+              
+        User Documentation        </a>
+        <ul class="parent-display-1358">	
+	<li manual-topic-id="1896"> <a href="https://laravel-bap.com/documentation/user-documentation/general-module-description/" rel="1896" class="post-link has-inner-child">General Description</a>
+	  <ul class="parent-display-1896">	
+	<li manual-topic-id="1921"> <a href="https://laravel-bap.com/documentation/user-documentation/general-module-description/application-layout/" rel="1921" class="post-link">Application Layout</a>
+	  	</li>
+		
+	<li manual-topic-id="1898"> <a href="https://laravel-bap.com/documentation/user-documentation/general-module-description/list-view/" rel="1898" class="post-link">Record list</a>
+	  	</li>
+		
+	<li manual-topic-id="1906"> <a href="https://laravel-bap.com/documentation/user-documentation/general-module-description/edit-record/" rel="1906" class="post-link">Record edit view</a>
+	  	</li>
+		
+	<li manual-topic-id="1901"> <a href="https://laravel-bap.com/documentation/user-documentation/general-module-description/read-view/" rel="1901" class="post-link">Record detail view</a>
+	  	</li>
+		
+	<li manual-topic-id="1904"> <a href="https://laravel-bap.com/documentation/user-documentation/general-module-description/record-edit/" rel="1904" class="post-link">Record create view</a>
+	  	</li>
+	</ul>	</li>
+		
+	<li manual-topic-id="1364"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/" rel="1364" class="post-link has-inner-child">Settings (Core Module)</a>
+	  <ul class="parent-display-1364">	
+	<li manual-topic-id="1376"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/general-settings/" rel="1376" class="post-link has-inner-child">General Settings</a>
+	  <ul class="parent-display-1376">	
+	<li manual-topic-id="1366"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/general-settings/display-settings/" rel="1366" class="post-link">Display Settings</a>
+	  	</li>
+		
+	<li manual-topic-id="1368"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/general-settings/language/" rel="1368" class="post-link">Language</a>
+	  	</li>
+		
+	<li manual-topic-id="1370"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/general-settings/timezone/" rel="1370" class="post-link">Timezone</a>
+	  	</li>
+		
+	<li manual-topic-id="1372"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/general-settings/date-format/" rel="1372" class="post-link">Date Format</a>
+	  	</li>
+		
+	<li manual-topic-id="1374"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/general-settings/time-format/" rel="1374" class="post-link">Time Format</a>
+	  	</li>
+		
+	<li manual-topic-id="2309"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/general-settings/tax-management/" rel="2309" class="post-link">Tax management</a>
+	  	</li>
+		
+	<li manual-topic-id="1378"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/general-settings/menu-manager/" rel="1378" class="post-link">Menu Manager</a>
+	  	</li>
+	</ul>	</li>
+		
+	<li manual-topic-id="1380"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/users-access-control/" rel="1380" class="post-link has-inner-child">Users &amp; Access Control</a>
+	  <ul class="parent-display-1380">	
+	<li manual-topic-id="1382"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/users-access-control/users/" rel="1382" class="post-link">Users</a>
+	  	</li>
+		
+	<li manual-topic-id="1384"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/users-access-control/roles-permissions/" rel="1384" class="post-link">Roles &amp; Permissions</a>
+	  	</li>
+		
+	<li manual-topic-id="1386"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/users-access-control/user-groups/" rel="1386" class="post-link">User Groups</a>
+	  	</li>
+	</ul>	</li>
+		
+	<li manual-topic-id="1388"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/others/" rel="1388" class="post-link has-inner-child">Others</a>
+	  <ul class="parent-display-1388">	
+	<li manual-topic-id="1390"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/others/company-settings/" rel="1390" class="post-link">Company settings</a>
+	  	</li>
+		
+	<li manual-topic-id="1392"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/others/announcement/" rel="1392" class="post-link">Announcement</a>
+	  	</li>
+		
+	<li manual-topic-id="1394"> <a href="https://laravel-bap.com/documentation/user-documentation/settings/others/outgoing-server/" rel="1394" class="post-link">Outgoing Server</a>
+	  	</li>
+	</ul>	</li>
+	</ul>	</li>
+		
+	<li manual-topic-id="1396"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/" rel="1396" class="post-link has-inner-child">CRM Modules</a>
+	  <ul class="parent-display-1396">	
+	<li manual-topic-id="1420"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/quotes/" rel="1420" class="post-link">Quotes</a>
+	  	</li>
+		
+	<li manual-topic-id="1422"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/service-contracts/" rel="1422" class="post-link">Service Contracts</a>
+	  	</li>
+		
+	<li manual-topic-id="1424"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/vendors/" rel="1424" class="post-link">Vendors</a>
+	  	</li>
+		
+	<li manual-topic-id="1360"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/dashboard/" rel="1360" class="post-link">Dashboard</a>
+	  	</li>
+		
+	<li manual-topic-id="1362"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/calendar/" rel="1362" class="post-link">Calendar</a>
+	  	</li>
+		
+	<li manual-topic-id="1398"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/accounts-companies/" rel="1398" class="post-link">Accounts (Companies)</a>
+	  	</li>
+		
+	<li manual-topic-id="1400"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/assets/" rel="1400" class="post-link">Assets</a>
+	  	</li>
+		
+	<li manual-topic-id="1402"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/campaigns/" rel="1402" class="post-link">Campaigns</a>
+	  	</li>
+		
+	<li manual-topic-id="1404"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/contacts/" rel="1404" class="post-link">Contacts</a>
+	  	</li>
+		
+	<li manual-topic-id="1406"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/deals/" rel="1406" class="post-link">Deals</a>
+	  	</li>
+		
+	<li manual-topic-id="1408"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/documents/" rel="1408" class="post-link">Documents</a>
+	  	</li>
+		
+	<li manual-topic-id="1410"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/invoices/" rel="1410" class="post-link">Invoices</a>
+	  	</li>
+		
+	<li manual-topic-id="1412"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/leads/" rel="1412" class="post-link">Leads</a>
+	  	</li>
+		
+	<li manual-topic-id="1414"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/orders/" rel="1414" class="post-link">Orders</a>
+	  	</li>
+		
+	<li manual-topic-id="1416"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/payments/" rel="1416" class="post-link">Payments</a>
+	  	</li>
+		
+	<li manual-topic-id="1418"> <a href="https://laravel-bap.com/documentation/user-documentation/crm-modules/products/" rel="1418" class="post-link">Products</a>
+	  	</li>
+	</ul>	</li>
+	</ul>      </li>
+            
+            
+            
+            
+            
+          </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 357px; top: 0px; display: block; max-height: 391px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></ul>
+    <!--Eof sidebar list--> 
+  </div>
+</aside>
+
+<div class="col-md-8 col-sm-8">
+    <div class="doc-single-post" id="single-post-container"><script>
+
+jQuery(document).ready(function() {
+	jQuery('.printomatic, .printomatictext').click(function() {
+		var id = jQuery(this).attr('id');
+		var target = jQuery(this).data('print_target');
+		if(!target){
+			target = jQuery('#target-' + id).val();
+		}
+		if (target == '%prev%') {
+			target = jQuery(this).prev();
+		}
+		if (target == '%next%') {
+			target = jQuery(this).next();
+		}
+
+		var w = window.open('', 'printomatic print page', 'status=no, toolbar=no, menubar=no, location=no');
+
+		var print_html = '<!DOCTYPE html><html><head><title>' + document.getElementsByTagName('title')[0].innerHTML + '</title>';
+		if ( typeof print_data != 'undefined' && typeof print_data[id] != 'undefined'){
+
+			if ( 'pom_site_css' in print_data[id] && print_data[id]['pom_site_css'] ){
+				print_html += '<link rel="stylesheet" type="text/css" href="' + print_data[id]['pom_site_css'] + '" />';
+			}
+
+			if ( 'pom_custom_css' in print_data[id] && print_data[id]['pom_custom_css']){
+				print_html += '<style>'+ print_data[id]['pom_custom_css'] +'</style>';
+			}
+
+			//build the blank page
+			w.document.open();
+			w.document.write( print_html + '</head><body></body></html>');
+			w.document.close();
+
+			if ( 'pom_do_not_print' in print_data[id] && print_data[id]['pom_do_not_print'] ){
+				jQuery(print_data[id]['pom_do_not_print']).hide();
+			}
+
+			if ( 'pom_html_top' in print_data[id] && print_data[id]['pom_html_top']){
+				jQuery(w.document.body).html( print_data[id]['pom_html_top'] );
+			}
+
+		}
+
+		var ua = window.navigator.userAgent;
+		var ie = true;
+
+		//rot in hell IE
+		if ( ua.indexOf("MSIE ") != -1) {
+			//alert('MSIE - Craptastic');
+			jQuery(w.document.body).append( jQuery( target ).clone( true ).html() );
+		}
+		else if ( ua.indexOf("Trident/") != -1) {
+			//console.log('IE 11 - Trident');
+			jQuery(w.document.body).append( jQuery( target ).clone( true ).html() );
+		}
+		else if ( ua.indexOf("Edge/") != -1 ){
+			//console.log('IE 12 - Edge');
+			//there is a bug in Edge where no nested elements can be appended.
+			jQuery( target ).each(function(){
+				var s = jQuery.trim( jQuery( this ).clone( true ).html() );
+				jQuery( w.document.body ).append( s );
+			});
+		}
+		else{
+			//console.log('good browser');
+			jQuery(w.document.body).append( jQuery( target ).clone( true ) );
+			ie = false;
+		}
+
+		if ( typeof print_data != 'undefined' && typeof print_data[id] != 'undefined'){
+            if ( 'pom_do_not_print' in print_data[id] ){
+                jQuery( print_data[id]['pom_do_not_print']).show();
+            }
+
+            if ( 'pom_html_bottom' in print_data[id] && print_data[id]['pom_html_bottom']){
+				jQuery(w.document.body).append( jQuery.trim( print_data[id]['pom_html_bottom'] ) );
+			}
+		}
+
+		//for IE cycle through and fill in any text input values... rot in hell IE
+		if(ie){
+			jQuery( target ).find('input[type=text]').each(function() {
+				var user_val = jQuery(this).val();
+				if(user_val){
+					var elem_id = jQuery(this).attr('id');
+					if(elem_id){
+						w.document.getElementById(elem_id).value = user_val;
+					}
+					else{
+						//we really should have a ID, let's try and grab the element by name attr.
+						var elem_name = jQuery(this).attr('name');
+						if(elem_name.length){
+							named_elements = w.document.getElementsByName(elem_name);
+							named_elements[0].value = user_val;
+						}
+					}
+				}
+			});
+		}
+
+		/* hardcodeed iframe and if so, force a pause... pro version offers more options */
+
+		iframe = jQuery(w.document).find('iframe');
+		if (iframe.length && typeof print_data != 'undefined' && typeof print_data[id] != 'undefined') {
+            if('pom_pause_time' in print_data[id] && print_data[id]['pom_pause_time'] < 3000){
+                print_data[id]['pom_pause_time'] = 3000;
+            }
+            else if(print_data[id]['pom_pause_time'] === 'undefined'){
+                print_data[id]['pom_pause_time'] = 3000;
+            }
+		}
+
+        if(typeof print_data != 'undefined' && typeof print_data[id] != 'undefined' && 'pom_pause_time' in print_data[id] && print_data[id]['pom_pause_time'] > 0){
+            pause_time = setTimeout(printIt, print_data[id]['pom_pause_time']);
+        }
+		else{
+			printIt();
+		}
+
+		function printIt(){
+			w.focus();
+		    w.print();
+
+			if('pom_close_after_print' in print_data[id] && print_data[id]['pom_close_after_print'] == '1'){
+				//need a bit of a pause to let safari on iOS render the print privew properly
+				setTimeout(
+					function() {
+						w.close()
+					}, 1000
+				);
+			}
+		}
+
+	});
+
+});
+(function (original) {
+  jQuery.fn.clone = function () {
+    var result           = original.apply(this, arguments),
+        my_textareas     = this.find('textarea').add(this.filter('textarea')),
+        result_textareas = result.find('textarea').add(result.filter('textarea')),
+        my_selects       = this.find('select').add(this.filter('select')),
+        result_selects   = result.find('select').add(result.filter('select'));
+
+    for (var i = 0, l = my_textareas.length; i < l; ++i) jQuery(result_textareas[i]).val(jQuery(my_textareas[i]).val());
+    for (var i = 0, l = my_selects.length;   i < l; ++i) {
+      for (var j = 0, m = my_selects[i].options.length; j < m; ++j) {
+        if (my_selects[i].options[j].selected === true) {
+          result_selects[i].options[j].selected = true;
+        }
+      }
+    }
+    return result;
+  };
+}) (jQuery.fn.clone);	
+var print_data = {"id2959":{"pom_site_css":"","pom_custom_css":"","pom_html_top":"","pom_html_bottom":"","pom_do_not_print":"","pom_pause_time":"","pom_close_after_print":"1"}};	
+
+
+jQuery(document).ready(function() {
+	
+    jQuery(".post-like a").click(function(){ 
+        heart = jQuery(this);
+        // Retrieve post ID from data attribute
+        post_id = heart.data("post_id");
+        // Ajax call
+        jQuery.ajax({
+            type: "post",
+            url: doc_ajax_var.url,
+			data: { action: 'post-like', 
+					nonce: doc_ajax_var.nonce,
+					post_id: post_id,
+					post_like: '',
+				  },
+			success: function(data, textStatus, XMLHttpRequest){ 
+					jQuery( "span.manual_doc_count" ).text(data);
+			},
+			error: function(MLHttpRequest, textStatus, errorThrown){  
+				//alert(textStatus); 
+			}
+        });
+        return false;
+    })
+	
+	
+    jQuery(".post-unlike a").click(function(){ 
+        heart = jQuery(this);
+        // Retrieve post ID from data attribute
+        post_id = heart.data("post_id");
+        // Ajax call
+        jQuery.ajax({
+            type: "post",
+            url: doc_ajax_var.url,
+			data: { action: 'post-unlike', 
+					nonce: doc_ajax_var.nonce,
+					post_id: post_id,
+					post_like: '',
+				  },
+			success: function(data, textStatus, XMLHttpRequest){ 
+					jQuery( "span.manual_doc_unlike_count" ).text(data);
+			},
+			error: function(MLHttpRequest, textStatus, errorThrown){  
+				//alert(textStatus); 
+			}
+        });
+        return false;
+    })	
+	
+	
+	// Impression
+	var ids = 0;
+	jQuery('.manual-views').each(function(){
+		imp_postIDs = jQuery(this).attr('id').replace('manual-views-','');
+		ids++;
+	});
+	if(imp_postIDs != '' ) { 
+		jQuery.ajax({
+				type: "post",
+				url: doc_ajax_var.url,
+				data: { action: 'manual-doc-impression', 
+						nonce: doc_ajax_var.nonce,
+						post_id: imp_postIDs,
+					  },
+				success: function(data, textStatus, XMLHttpRequest){ /*alert(data);*/ },
+				error: function(MLHttpRequest, textStatus, errorThrown){ /*alert(textStatus);*/  }
+		});
+	}
+	
+})
+</script>
+<style>
+.pull-right.reply {
+	display: none;
+}
+</style>
+<div id="single-post post-2959"><div class="page-title-header"> 
+				   <h2 class="manual-title title singlepg-font">Login with Google</h2><p><i class="fa fa-eye"></i> <span>344 views </span><i class="fa fa-calendar"></i> <span>August 12, 2019</span><i class="fa fa-calendar-plus-o"></i> <span>September 11, 2019</span><i class="fa fa-user"></i> <span>laravel-bap</span> <i class="fa fa-thumbs-o-up"></i> <span>0</span><span class="printomatic pom-small-grey " id="2959" data-print_target=".entry-content"></span><span></span></p>
+				 </div><div class="post-cat margin-btm-35"></div>
+				 <div class="entry-content clearfix"><p>Create Application in Google</p>
+<ul class="">
+<li id="6408" class="ln lo bx av lp b lq mo ls mp lu mq lw mr ly ms ma my mz na" data-selectable-paragraph="">Create a project:&nbsp;<a class="bc cn lj lk ll lm" href="https://console.developers.google.com/projectcreate">https://console.developers.google.com/projectcreate</a></li>
+<li id="e8a0" class="ln lo bx av lp b lq nb ls nc lu nd lw ne ly nf ma my mz na" data-selectable-paragraph="">Create credentials:&nbsp;<a class="bc cn lj lk ll lm" href="https://console.developers.google.com/apis/credentials">https://console.developers.google.com/apis/credentials</a></li>
+</ul>
+<p>&nbsp;</p>
+<p id="AusoGLi"><img class="alignnone size-full wp-image-2960 " src="./Login-with-Google_files/img_5d516d730dee8.png" alt="" srcset="https://i1.wp.com/laravel-bap.com/laravel-bap-cont/uploads/2019/08/img_5d516d730dee8.png?w=700&amp;ssl=1 700w, https://i1.wp.com/laravel-bap.com/laravel-bap-cont/uploads/2019/08/img_5d516d730dee8.png?resize=300%2C194&amp;ssl=1 300w" sizes="(max-width: 700px) 100vw, 700px" data-recalc-dims="1"></p>
+<p>Select OAuth client ID &gt;&nbsp;<a class="bs dd mg mh mi mj" href="https://console.developers.google.com/apis/credentials/consent" target="_blank" rel="noopener noreferrer">Consent</a>&nbsp;&gt; Web application</p>
+<p>A modal will pop up with your apps client id and client secret.</p>
+<p>&nbsp;</p>
+<p>Edit . env file located at root folder of application and set</p>
+<p>GOOGLE_CLIENT_ID=”000000000000-XXXXXXXXXXX.apps.googleusercontent.com”<br>
+GOOGLE_CLIENT_SECRET=”XXXXXXXXXXXXX”<br>
+GOOGLE_REDIRECT=”/auth/google/callback”</p>
+<p>run “php artisan bap:cache” or “php artisan config:cache” command.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p id="VbOPHyZ"><img class="alignnone size-full wp-image-2961 " src="./Login-with-Google_files/img_5d516db8c2a9b.png" alt="" srcset="https://i2.wp.com/laravel-bap.com/laravel-bap-cont/uploads/2019/08/img_5d516db8c2a9b.png?w=700&amp;ssl=1 700w, https://i2.wp.com/laravel-bap.com/laravel-bap-cont/uploads/2019/08/img_5d516db8c2a9b.png?resize=300%2C50&amp;ssl=1 300w" sizes="(max-width: 700px) 100vw, 700px" data-recalc-dims="1"></p>
+</div><div style="clear:both"></div>		<div class="social-box">
+		<a target="_blank" href="https://twitter.com/home?status=https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/"><i class="fa fa-twitter social-share-box"></i></a><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/" title="facebook"><i class="fa fa-facebook social-share-box"></i></a><a target="_blank" href="https://pinterest.com/pin/create/button/?url=https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/&amp;media=&amp;description="><i class="fa fa-pinterest social-share-box"></i></a><a target="_blank" href="https://plus.google.com/share?url=https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/"><i class="fa fa-google-plus social-share-box"></i></a><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/"><i class="fa fa-linkedin social-share-box"></i></a>		</div>
+		<div class="panel-heading" style="padding:0px;">
+						<div id="rate-topic-content" class="row-fluid">
+							<div class="rate-buttons"> <p class="helpfulmsg">Was this helpful?</p> <span class="post-like"><a data-post_id="2959" href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/#"><span class="btn btn-success rate custom-like-dislike-btm" data-rating="1"><i class="glyphicon glyphicon-thumbs-up"></i> <span class="manual_doc_count"> Yes</span></span></a></span>&nbsp;<span class="post-unlike"><a data-post_id="2959" href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/#"><span class="btn btn-danger rate custom-like-dislike-btm" data-rating="0">
+                <i class="glyphicon glyphicon-thumbs-down"></i> <span class="manual_doc_unlike_count"> No </span></span></a></span> </div></div>
+					<div class="clearfix"></div>
+					<span class="manual-views" id="manual-views-2959"></span>
+				</div></div>			<style>.manual_related_articles h5:before { left: 26px; } .body-content li.cat.inner:before { left: 30px; }</style>
+			<section class="manual_related_articles">
+				<h5>Related Articles</h5>
+				<span class="separator small"></span>
+				<ul class="kbse">
+									<li class="cat inner"><a href="https://laravel-bap.com/documentation/core-modules/webform-api-creating-leads-contacts-via-api/">WebForm API – Creating leads, contacts via API</a></li>
+				 					<li class="cat inner"><a href="https://laravel-bap.com/documentation/getting-started/configuration/recaptcha/">ReCaptcha</a></li>
+				 					<li class="cat inner"><a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-github/">Login with Github</a></li>
+				 					<li class="cat inner"><a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-facebook/">Login with Facebook</a></li>
+				 					<li class="cat inner"><a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-twitter/">Login with Twitter</a></li>
+				 					<li class="cat inner"><a href="https://laravel-bap.com/documentation/getting-started/configuration/stripe-configuration/">Stripe Configuration</a></li>
+				 				</ul>
+			</section>      
+		   </div>
+</div>
+
+
+
+</div>
+</div>
+
+<!-- SECTION FOOTER TOP-->
+<footer><div class="footer-bg" style="padding: 65px 0px 0px;"><div class="container"> <div class="row">
+				  
+					<div class="col-md-3 col-sm-6"><div id="text-3" class="sidebar-widget footer-widget widget_text"><h5>About Laravel BAP</h5>			<div class="textwidget"><p>It’s Backend Application Platform that&nbsp;allows creating any back-office web application faster.</p>
+</div>
+		</div></div><div class="col-md-3 col-sm-6"><div id="custom_html-2" class="widget_text sidebar-widget footer-widget widget_custom_html"><h5>Product</h5><div class="textwidget custom-html-widget"><ul>
+<li><a href="https://laravel-bap.com/features">Features</a></li>
+	<li><a href="http://preview.codecanyon.net/item/laravelbap-modular-backend-application-platform-example-crm-with-17-modules/full_screen_preview/21685635?ref=laravel-bap">Demo</a></li>
+	<li><a href="https://laravel-bap.com/laravel-bap-roadmap">Roadmap</a></li>
+	<li><a href="https://laravel-bap.com/licenses">Licenses</a></li>
+</ul></div></div></div><div class="col-md-3 col-sm-6"><div id="custom_html-1" class="widget_text sidebar-widget footer-widget widget_custom_html"><h5>Join Our Community</h5><div class="textwidget custom-html-widget"><ul>
+<li><a href="https://laravel-bap.com/forum">Forum</a></li>
+	<li><a href="https://laravel-bap.com/documentation/getting-started/">Documentation</a></li>
+<li><a href="https://laravel-bap.com/faq/getting-started/">FAQ</a></li>
+
+
+</ul></div></div></div><div class="col-md-3 col-sm-6"><div id="custom_html-3" class="widget_text sidebar-widget footer-widget widget_custom_html"><h5>Others</h5><div class="textwidget custom-html-widget"><ul>
+	<li><a href="https://laravel-bap.com/about-us">About us</a></li>
+	<li><a href="https://laravel-bap.com/news">News</a></li>
+	<li><a href="https://laravel-bap.com/contact">Contact</a></li>
+</ul></div></div></div></div> </div><div class="footer_social_copyright"> <div class="container"> <div class="row"><div class="col-md-12 col-sm-12 footer-btm-box" style=""><ul class="social-foot" style="padding-left:0px;border-bottom:1px solid rgba(249, 249, 249, 0.05);">        <li><a href="https://twitter.com/laravel_bap" title="Twitter" target="_blank"><i class="fa fa-twitter social-footer-icon"></i></a></li>
+                
+                <li><a href="https://www.facebook.com/Laravelbap-773161839552485/" title="Facebook" target="_blank"><i class="fa fa-facebook social-footer-icon"></i></a></li>
+                
+                
+                
+                
+                
+                
+        		
+		</ul><ul id="footer_menu" class="footer-secondary"><li id="menu-item-1528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1528"><a href="https://laravel-bap.com/privacy-policy/">Privacy Policy</a></li>
+</ul><ul class="footer-tertiary copyright-section secondaryLink" style=""> <li> <p>© 2018 <a href="http://laravel-bap.com/">laravel-bap.com</a>. All Rights Reserved.  <a href="https://www.vecteezy.com/">Vectors by vecteezy.com</a></p> </li> </ul></div> </div> </div> </div></div></footer>	<div style="display:none">
+	</div>
+<script type="text/javascript">
+    var sticky_menu = 2;
+    var manual_searchmsg = 'Please Let Us Know Your Problem';
+	
+	var owlCarousel_item = 4;
+		var live_search_active = 1;
+	var live_search_url = 'https://laravel-bap.com/?ajax=on&s=';
+		
+	/**** DOCUMENTATION  ****/
+		var doc_catpage_hash = 1;
+	var doc_catpage_active = 1;
+	var doc_cookie_sh = 2;
+	var doc_scroll_menu_define_height = '401px';
+	var go_up_icon = 'fa fa-arrow-up';
+    var execute_js_after_ajax_call_pg_doc = '2';
+	var kb_display_feedback_form_onclick_thumbsdown = '2';
+	/*** FAQ ***/
+			var faq_search_id = '';
+		</script>
+<script type="text/javascript" src="./Login-with-Google_files/photon.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/laravel-bap.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/scripts.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/devicepx-jetpack.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ctcc_vars = {"expiry":"30","method":"1","version":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/uk-cookie-consent-js.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"https:\/\/laravel-bap.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/polls-js.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var socialWarfare = {"addons":[],"post_id":"2985","variables":{"emphasizeIcons":false,"powered_by_toggle":false,"affiliate_link":"https:\/\/warfareplugins.com"},"floatBeforeContent":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/script.min.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/wpgroho.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/timer.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/appear.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/parallax.min.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/parallax.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/owl.carousel.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/masonry-docs.min.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/isotope.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/imagesloaded.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/advsearch.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/customscrollbar.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/theme.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var doc_ajax_var = {"url":"https:\/\/laravel-bap.com\/wp-admin\/admin-ajax.php","nonce":"7fedacbf3a"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/voting-front.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/fitvids.min.js"></script>
+<script type="text/javascript" src="./Login-with-Google_files/wp-embed.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var print_data = {"id9059":{"pom_site_css":"","pom_custom_css":"","pom_html_top":"","pom_html_bottom":"","pom_do_not_print":"","pom_pause_time":"","pom_close_after_print":"1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Login-with-Google_files/printomat.js"></script>
+<script type="text/javascript"> var swp_nonce = "5df2a179e7";var swpFloatBeforeContent = false; var swp_ajax_url = "https://laravel-bap.com/wp-admin/admin-ajax.php";var swpClickTracking = false;</script><script type="text/javascript" src="./Login-with-Google_files/e-202424.js" async="async" defer="defer"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:7.7.5',blog:'143632077',post:'0',tz:'1',srv:'laravel-bap.com'} ]);
+	_stq.push([ 'clickTrackerInit', '143632077', '0' ]);
+</script>
+			
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
+												if(!catapultReadCookie("catAccCookies")){ // If the cookie has not been set then show the bar
+							$("html").addClass("has-cookie-bar");
+							$("html").addClass("cookie-bar-bottom-bar");
+							$("html").addClass("cookie-bar-bar");
+													}
+																	});
+				</script>
+			
+			<div id="catapult-cookie-bar" class="" style="display: none;"><div class="ctcc-inner "><span class="ctcc-left-side">This site uses cookies:  <a class="ctcc-more-info-link" tabindex="0" target="_blank" href="https://laravel-bap.com/privacy-policy/">Find out more.</a></span><span class="ctcc-right-side"><button id="catapultCookie" tabindex="0" onclick="catapultAcceptCookies();">Okay, thanks</button></span></div><!-- custom wrapper class --></div><!-- #catapult-cookie-bar --><img src="./Login-with-Google_files/g.gif" alt="" width="6" height="5" id="wpstats"><p id="scrollbkToTop" style="display: block;"><a href="https://laravel-bap.com/documentation/getting-started/configuration/login-with-google/#top"><span> <i class="fa fa-arrow-up footer-go-uplink"></i></span></a></p><div id="jquery-live-search" style="display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
